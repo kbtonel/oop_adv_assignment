@@ -1,13 +1,11 @@
 <?php
-	require_once("connection.php");
+	require_once("main.php");
 	
-	class Book 
+	class Book extends Main
 	{
-		var $connection;
-		
 		function __construct()
 		{
-			$this->connection = new Database;
+			parent::__construct();
 		}
 		
 		function get_books()

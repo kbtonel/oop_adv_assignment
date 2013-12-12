@@ -1,13 +1,12 @@
 <?php
-	require_once("connection.php");
-
-	class Author 
+	require_once("main.php");
+	
+	
+	class Author extends Main
 	{
-		var $connection;
-		
 		function __construct()
 		{
-			$this->connection = new Database;
+			parent::__construct();
 		}
 		
 		function get_authors()
